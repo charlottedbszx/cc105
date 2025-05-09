@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Diabetes Dataset Outcome Distribution</h2>
+    <img src="{% static chart_url %}" alt="Diabetes Outcome Chart">
+    <br><br>
+    <a href="{% url 'predict' %}">Back to Prediction</a>
+</body>
+</html>
